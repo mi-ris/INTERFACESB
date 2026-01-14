@@ -1,0 +1,104 @@
+<ion-header>
+  <ion-toolbar class="store-toolbar">
+    <ion-title class="store-title">
+      Electro<span>Shop</span>
+    </ion-title>
+
+    <ion-buttons slot="end">
+      <ion-button fill="clear">
+        <ion-icon name="search-outline"></ion-icon>
+      </ion-button>
+      <ion-button fill="clear">
+        <ion-icon name="cart-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="store-bg">
+
+  <!-- BANNER -->
+  <section class="store-banner">
+    <div>
+      <h1>La mejor tecnología para tu día a día</h1>
+      <p>Computación, redes, soporte y más</p>
+      <ion-button routerLink="/productos">
+        Ver Productos
+      </ion-button>
+    </div>
+  </section>
+
+  <!-- CATEGORÍAS -->
+  <section class="categories">
+    <h2>Categorías</h2>
+
+    <div class="category-list">
+      <div class="category-item">
+        <ion-icon name="laptop-outline"></ion-icon>
+        <span>Computación</span>
+      </div>
+
+      <div class="category-item">
+        <ion-icon name="wifi-outline"></ion-icon>
+        <span>Redes</span>
+      </div>
+
+      <div class="category-item">
+        <ion-icon name="settings-outline"></ion-icon>
+        <span>Soporte</span>
+      </div>
+
+      <div class="category-item">
+        <ion-icon name="phone-portrait-outline"></ion-icon>
+        <span>Móviles</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- DESTACADOS -->
+  <section class="featured">
+    <h2>Servicios Destacados</h2>
+
+    <ion-grid>
+      <ion-row>
+
+        <ion-col size="12" size-md="4">
+          <div class="product-card">
+            <span class="tag new">Nuevo</span>
+            <ion-icon name="code-slash-outline"></ion-icon>
+            <h3>Desarrollo Web</h3>
+            <p>Tiendas, sistemas y apps.</p>
+            <ion-button expand="block">
+              Contratar
+            </ion-button>
+          </div>
+        </ion-col>
+
+        <ion-col size="12" size-md="4">
+          <div class="product-card">
+            <span class="tag offer">Oferta</span>
+            <ion-icon name="settings-outline"></ion-icon>
+            <h3>Soporte Técnico</h3>
+            <p>Mantenimiento y reparación.</p>
+            <ion-button expand="block">
+              Contratar
+            </ion-button>
+          </div>
+        </ion-col>
+
+        <ion-col size="12" size-md="4">
+          <div class="product-card">
+            <ion-icon name="shield-checkmark-outline"></ion-icon>
+            <h3>Seguridad Digital</h3>
+            <p>Protección profesional.</p>
+            <ion-button expand="block">
+              Contratar
+            </ion-button>
+          </div>
+        </ion-col>
+
+      </ion-row>
+    </ion-grid>
+  </section>
+
+</ion-content>

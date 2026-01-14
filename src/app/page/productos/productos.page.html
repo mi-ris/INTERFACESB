@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar class="store-toolbar">
+    <ion-title class="store-title">
+      Productos Tecnológicos
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="store-bg">
+
+  <!-- FILTRO -->
+  <section class="filter-bar">
+    <span>Categorías:</span>
+    <ion-button size="small" fill="outline">Todos</ion-button>
+    <ion-button size="small" fill="outline">Servicios</ion-button>
+    <ion-button size="small" fill="outline">Soporte</ion-button>
+  </section>
+
+  <!-- GRID -->
+  <ion-grid>
+    <ion-row>
+
+      <ion-col
+        size="12"
+        size-md="4"
+        *ngFor="let producto of productos">
+
+        <div class="store-card">
+          <span
+            class="badge"
+            *ngIf="producto.etiqueta">
+            {{ producto.etiqueta }}
+          </span>
+
+          <ion-icon [name]="producto.icono"></ion-icon>
+
+          <h3>{{ producto.nombre }}</h3>
+          <p>{{ producto.descripcion }}</p>
+
+          <div class="price">
+            {{ producto.precio }}
+          </div>
+
+          <ion-button expand="block">
+            Agregar
+          </ion-button>
+        </div>
+
+      </ion-col>
+
+    </ion-row>
+  </ion-grid>
+
+</ion-content>
